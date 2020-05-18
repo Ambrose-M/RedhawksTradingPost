@@ -1,146 +1,128 @@
 [
- {
-  "Id": "jenlooper-cactus",
-  "Maker": "@jenlooper",
-  "img": "https://user-images.githubusercontent.com/41929050/61567048-13938600-aa33-11e9-9cfd-712191013192.jpeg",
-  "Url": "https://www.hackster.io/agent-hawking-1/the-quantified-cactus-an-easy-plant-soil-moisture-sensor-e65393",
-  "Title": "The Quantified Cactus: An Easy Plant Soil Moisture Sensor",
-  "Description": "This project is a good learning project to get comfortable with soldering and programming an Arduino.",
-  "Ratings": [5, 5]
- },
- {
-  "Id": "jenlooper-light",
-  "Maker": "jenlooper",
-  "img": "https://user-images.githubusercontent.com/41929050/61567049-13938600-aa33-11e9-9c69-a4184bf8e524.jpeg",
-  "Url": "https://www.hackster.io/agent-hawking-1/book-light-dee7e4",
-  "Title": "A beautiful switch-on book light",
-  "Description": "Use craft items you have around the house, plus two LEDs and a LilyPad battery holder, to create a useful book light for reading in the dark.",
-  "Ratings": null
- },
- {
-  "Id": "jenlooper-lightshow",
-  "Maker": "@jenlooper",
-  "img": "https://user-images.githubusercontent.com/41929050/61567053-13938600-aa33-11e9-9780-104fe4019659.png",
-  "Url": "https://www.hackster.io/agent-hawking-1/bling-your-laptop-with-an-internet-connected-light-show-30e4db",
-  "Title": "Bling your Laptop with an Internet-Connected Light Show",
-  "Description": "Create a web-connected light-strip API controllable from your website, using the Particle.io.",
-  "Ratings": null
- },
- {
-  "Id": "jenlooper-survival",
-  "Maker": "jenlooper",
-  "img": "https://user-images.githubusercontent.com/41929050/61567051-13938600-aa33-11e9-8ae7-0b5c19aafab4.jpeg",
-  "Url": "https://www.hackster.io/agent-hawking-1/create-a-compact-survival-kit-38bfdb",
-  "Title": "Create a Compact Survival Kit with LED Track Lighting",
-  "Description": "Use an Altoids tin with Chibitronics sticker LEDs to create a light-up compact that doubles as a survival kit for the young hipster",
-  "Ratings": null
- },
- {
-  "Id": "sailorhg-bubblesortpic",
-  "Maker": "sailorhg",
-  "img": "https://user-images.githubusercontent.com/41929050/61567054-13938600-aa33-11e9-9163-eec98e239b7a.png",
-  "Url": "https://twitter.com/sailorhg/status/1090107740049952770",
-  "Title": "Bubblesort Visualization",
-  "Description": "Visualization of sailor scouts sorted by bubblesort algorithm by their planet's distance from the sun",
-  "Ratings": null
- },
- {
-  "Id": "sailorhg-corsage",
-  "Maker": "sailorhg",
-  "img": "https://user-images.githubusercontent.com/41929050/61567055-142c1c80-aa33-11e9-96ff-9fbac6413625.png",
-  "Url": "https://twitter.com/sailorhg/status/1090113666911891456",
-  "Title": "Light-up Corsage",
-  "Description": "Light-up corsage I made with my summer intern.",
-  "Ratings": null
- },
- {
-  "Id": "sailorhg-kit",
-  "Maker": "sailorhg",
-  "img": "https://user-images.githubusercontent.com/41929050/61567056-142c1c80-aa33-11e9-8682-10065d338145.png",
-  "Url": "https://twitter.com/sailorhg/status/1090122822007963648",
-  "Title": "Pastel hardware kit",
-  "Description": "Pastel hardware kits complete with custom manufactured pastel alligator clips.",
-  "Ratings": null
- },
- {
-  "Id": "sailorhg-led",
-  "Maker": "sailorhg",
-  "img": "https://user-images.githubusercontent.com/41929050/61567052-13938600-aa33-11e9-9a88-cd842073ba44.jpg",
-  "Url": "https://twitter.com/sailorhg/status/1090117277540745216",
-  "Title": "Heart-shaped LED",
-  "Description": "custom molded heart shaped LED with sprinkles.",
-  "Ratings": null
- },
- {
-  "Id": "selinazawacki-soi-shirt",
-  "Maker": "selinazawacki",
-  "img": "https://user-images.githubusercontent.com/41929050/61567060-142c1c80-aa33-11e9-8188-5a4803844a9e.png",
-  "Url": "https://www.instagram.com/p/BNvESj-j8PI/",
-  "Title": "Black Sweatshirt",
-  "Description": "Black sweatshirt hoody with the Sick of the Internet logo.",
-  "Ratings": null
- },
- {
-  "Id": "selinazawacki-soi-pins",
-  "Maker": "selinazawacki",
-  "img": "https://user-images.githubusercontent.com/41929050/61567059-142c1c80-aa33-11e9-939b-2ecf4492786d.png",
-  "Url": "https://www.instagram.com/p/BNm6hZzDoEF/",
-  "Title": "Sick of the Internet Pins",
-  "Description": "Still some time to enter the pin/sticker giveaway! ",
-  "Ratings": null
- },
- {
-  "Id": "vogueandcode-hipster-dev-bro",
-  "Maker": "vogueandcode",
-  "img": "https://user-images.githubusercontent.com/41929050/61567061-14c4b300-aa33-11e9-9fee-63ff2c0c9823.png",
-  "Url": "https://www.vogueandcode.com/shop/hipster-dev-bro",
-  "Title": "Hipster Dev",
-  "Description": "Hipster Dev is busy coding away while styled in a camo jacket and orange beanie.",
-  "Ratings": null
- },
- {
-  "Id": "vogueandcode-pretty-girls-code-tee",
-  "Maker": "vogueandcode",
-  "img": "https://user-images.githubusercontent.com/41929050/61567062-14c4b300-aa33-11e9-9dcd-8bfed4ece810.png",
-  "Url": "https://www.vogueandcode.com/shop/pretty-girls-code-tee",
-  "Title": "Pretty Girls Code Tee",
-  "Description": "Everyone�s favorite design is finally here on a tee! The Pretty Girls Code crew-neck tee is available in a soft pink with red writing.",
-  "Ratings": null
- },
- {
-  "Id": "vogueandcode-ruby-sis-2",
-  "Maker": "vogueandcode",
-  "img": "https://user-images.githubusercontent.com/41929050/61567063-14c4b300-aa33-11e9-8515-bcb866da9ea3.png",
-  "Url": "https://www.vogueandcode.com/shop/ruby-sis-2",
-  "Title": "Ruby Sis",
-  "Description": "Styled in a dashiki, Ruby Sis is listening to music while coding in her favorite language, Ruby!",
-  "Ratings": null
- },
- {
-  "Id": "selinazawacki-moon",
-  "Maker": "selinazawacki",
-  "img": "https://user-images.githubusercontent.com/41929050/61567057-142c1c80-aa33-11e9-9781-9e442418eaab.png",
-  "Url": "https://www.instagram.com/p/BFktVYPinKQ/",
-  "Title": "Holographic Dark Moon Necklace",
-  "Description": "Not sure if I'll be making more, get it while I have it in the store.",
-  "Ratings": null
- },
- {
-  "Id": "selinazawacki-shirt",
-  "Maker": "selinazawacki",
-  "img": "https://user-images.githubusercontent.com/41929050/61567058-142c1c80-aa33-11e9-89fb-b4f30d84d69d.png",
-  "Url": "https://www.instagram.com/p/BEXlpiZCnJ3",
-  "Title": "Floppy Crop",
-  "Description": "Used up the Diskette fabric today to make 2 of these crops.",
-  "Ratings": null
- },
- {
-  "Id": "selinazawacki-shirt",
-  "Maker": "selinazawacki",
-  "img": "https://user-images.githubusercontent.com/41929050/61567058-142c1c80-aa33-11e9-89fb-b4f30d84d69d.png",
-  "Url": "https://www.instagram.com/BEXlpiZCnJ3",
-  "Title": "Floppy Crop",
-  "Description": "Used up the Diskette fabric today to make 2 of these crops.",
-  "Ratings": null
- }
+  {
+    "Id": "jenlooper-cactus",
+    "Maker": "@jenlooper",
+    "img": "https://cdn.shopify.com/s/files/1/1696/4351/products/1_9870dbec-2d2b-4a6d-956e-0232b55b5490_1400x.jpg?v=1533929161",
+    "Url": "https://www.lasvegasfurnitureonline.com/products/coaster-office-chairs-mid-century-modern-office-chair-with-upholstered-seat?variant=12371440107637",
+    "Title": "Modern Office Chair with Upholstered Seat",
+    "Description": "",
+    "Ratings": [ 5, 5 ]
+  },
+  {
+    "Id": "jenlooper-light",
+    "Maker": "jenlooper",
+    "img": "https://www.dhresource.com/albu_643688758_00/1.0x0.jpg",
+    "Url": "https://www.dhgate.com/product/5-slot-wood-leather-multi-function-desk-stationery/488102111.html#seo=WAP",
+    "Title": "Leather Multi-Function Organizer",
+    "Description": "",
+    "Ratings": null
+  },
+  {
+    "Id": "jenlooper-lightshow",
+    "Maker": "@jenlooper",
+    "img": "https://images.crateandbarrel.com/is/image/Crate/IconWhitePictureFrame8x10SHS19",
+    "Url": "https://www.crateandbarrel.com/icon-8x10-white-picture-frame/s169341",
+    "Title": "8x10 Tabletop Picture Frame",
+    "Description": "",
+    "Ratings": null
+  },
+  {
+    "Id": "jenlooper-survival",
+    "Maker": "jenlooper",
+    "img": "https://www.vari.com/dw/image/v2/BDFT_PRD/on/demandware.static/-/Sites-vari-master-catalog/default/dw31b988e5/images/large/FD-ESD4830/42535-black/vari-electric-desk_42535_black_lowered.jpg?sw=800&sh=800",
+    "Url": "https://www.vari.com/au/en/electric-standing-desk-48x30/FD-ESD4830.html",
+    "Title": "Electric Standing Desk 48x30",
+    "Description": "",
+    "Ratings": null
+  },
+  {
+    "Id": "sailorhg-bubblesortpic",
+    "Maker": "sailorhg",
+    "img": "https://cdn.shadesoflight.com/product_images/5b73606b6170706433026914/detail/gray/angled-desk-lamp.jpg?c=1539986933",
+    "Url": "https://www.shadesoflight.com/products/angled-desk-lamp?color=Gray",
+    "Title": "Gray Desk Lamp",
+    "Description": "",
+    "Ratings": null
+  },
+  {
+    "Id": "sailorhg-corsage",
+    "Maker": "sailorhg",
+    "img": "https://ae01.alicdn.com/kf/HTB1YxzvS5LaK1RjSZFxq6ymPFXaf/Natural-Bamboo-Desktop-Bookshelf-Countertop-Bookcase-Office-Supplies-Desk-Storage-Organizer-Accessories-Display-Rack-Bookshelf.jpg",
+    "Url": "https://www.aliexpress.com/item/33010715260.html",
+    "Title": "Desktop Bookshelf",
+    "Description": "",
+    "Ratings": null
+  },
+  {
+    "Id": "sailorhg-kit",
+    "Maker": "sailorhg",
+    "img": "https://bostitchoffice.com/media/blog/2018-10OCT/SUZ_1546.jpg",
+    "Url": "https://bostitchoffice.com/articles/product-faq/how-to-use-a-3-hole-punch/",
+    "Title": "3 Hole Punch",
+    "Description": "",
+    "Ratings": null
+  },
+  {
+    "Id": "sailorhg-led",
+    "Maker": "sailorhg",
+    "img": "https://i.pinimg.com/originals/56/c9/0e/56c90eae1637803e565e1a0fabe37124.jpg",
+    "Url": "https://www.containerstore.com/s/office/u-brands-white-large-farmhouse-monthly-dry-erase-board/1d?productId=11006090",
+    "Title": "Dry Erase Whiteboard 30x20",
+    "Description": "",
+    "Ratings": null
+  },
+  {
+    "Id": "selinazawacki-soi-shirt",
+    "Maker": "selinazawacki",
+    "img": "https://cdn.shopify.com/s/files/1/0070/6704/1862/products/Gold_trash_can4_1024x1024.jpg?v=1571764489",
+    "Url": "https://harrahome.com/collections/decoration/products/harra-home-open-top-modern-round-metal-small-trash-can-wastebasket-garbage-container-bin-for-bathroom-office-bedroom-home-durable-stainless-steel-brass-trashcan",
+    "Title": "Small Trash Can",
+    "Description": "",
+    "Ratings": null
+  },
+  {
+    "Id": "selinazawacki-soi-pins",
+    "Maker": "selinazawacki",
+    "img": "https://cdn.home-designing.com/wp-content/uploads/2016/08/book-stopper-600x600.jpg",
+    "Url": "http://www.home-designing.com/50-unique-bookends-for-book-lovers",
+    "Title": "Whale Bookend",
+    "Description": "",
+    "Ratings": null
+  },
+  {
+    "Id": "vogueandcode-hipster-dev-bro",
+    "Maker": "vogueandcode",
+    "img": "https://www.westelm.com/weimgs/ab/images/wcm/products/202014/0247/mr-clarke-wall-clock-large-white-o.jpg",
+    "Url": "https://www.westelm.com/products/mr-clarke-clock-large-wood-d5943/",
+    "Title": "Newgate Wall Clock",
+    "Description": "",
+    "Ratings": null
+  },
+  {
+    "Id": "vogueandcode-pretty-girls-code-tee",
+    "Maker": "vogueandcode",
+    "img": "https://static.rcwilley.com/products/111784255/Rustic-Brown-Printer-Stand-File-Cabinet---Latitude-rcwilley-image1~800.jpg",
+    "Url": "https://www.rcwilley.com/111784255/Rustic-Brown-Printer-Stand-File-Cabinet---Latitude-View",
+    "Title": "Printer Stand File Cabinet",
+    "Description": "",
+    "Ratings": null
+  },
+  {
+    "Id": "vogueandcode-ruby-sis-2",
+    "Maker": "vogueandcode",
+    "img": "https://www.ikea.com/gb/en/images/products/aloe-vera-potted-plant-aloe__0901261_PE727654_S5.JPG",
+    "Url": "https://www.ikea.com/gb/en/p/aloe-vera-potted-plant-aloe-70276651/",
+    "Title": "Aloe Vera Potted Plant",
+    "Description": "",
+    "Ratings": null
+  },
+  {
+    "Id": "selinazawacki-moon",
+    "Maker": "selinazawacki",
+    "img": "https://cdn11.bigcommerce.com/s-3yfw1mhp8m/images/stencil/1000x1000/products/193/2283/2_2__60597.1571847849.jpg?c=2",
+    "Url": "https://eurekaergonomic.com/high-back-executive-mesh-swivel-office-computer-desk-chair-with-armrest-black/",
+    "Title": "Ergonomic Mesh Swivel Chair",
+    "Description": "",
+    "Ratings": null
+  }
 ]
