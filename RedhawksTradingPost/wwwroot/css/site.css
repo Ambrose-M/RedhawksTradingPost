@@ -169,3 +169,33 @@ ul {
 .material-icons.md-48 {
     font-size: 48px;
 }
+
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+/* Style the search box inside the navigation bar */
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 15px;
+    margin-left: 17px;
+    font-size: 17px;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 4px 10px;
+    margin-top: 14px;
+    margin-right: 59px;
+    font-size: 17px;
+    cursor: pointer;
+    background: #000000;
+}
+
+    .topnav .search-container button:hover {
+        background: #ccc;
+    }
