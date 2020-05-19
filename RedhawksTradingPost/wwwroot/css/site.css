@@ -193,9 +193,14 @@ ul {
     margin-right: 59px;
     font-size: 17px;
     cursor: pointer;
-    background: #000000;
+    background: #242323;
 }
 
-    .topnav .search-container button:hover {
-        background: #ccc;
-    }
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+.icon {
+    float: right;
+    padding: 2px 10px;
+    margin-top: 1px;
+}
