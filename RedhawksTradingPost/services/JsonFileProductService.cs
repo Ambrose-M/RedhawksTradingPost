@@ -2,7 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Text.Json;
-using HW1.Models;
+using RedhawksTradingPost.Models;
 using Microsoft.AspNetCore.Hosting;
 
 namespace RedhawksTradingPost.Services
