@@ -5,7 +5,7 @@ using System.Text.Json;
 using HW1.Models;
 using Microsoft.AspNetCore.Hosting;
 
-namespace HW1.Services
+namespace RedhawksTradingPost.Services
 {
     public class JsonFileProductService
     {
