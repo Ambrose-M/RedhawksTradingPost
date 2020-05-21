@@ -4,31 +4,36 @@
     ViewData["Title"] = "Home Page";
 }
 
-    <div class="text-right">
-         
-        <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                Sort By...
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Date: Newest to Oldest</a>
-                <a class="dropdown-item" href="#">Date: Oldest to Newest</a>
+    <div class="row">
+        <div class="col-2">
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Sort By...
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Date: Newest to Oldest</a>
+                    <a class="dropdown-item" href="#">Date: Oldest to Newest</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <h1 class="display-6"></h1>
-
-    <div class="card-columns">
-        @foreach (var product in Model.Products)
-        {
-        <div class="card">
-            <div class="card-img" style="background-image: url('@product.Image');"></div>
-            <div class="card-body">
-                <h5 class="card-title">@product.Title</h5>
-            </div>
-         
+        <div class="col-2">
+            //category menu here
         </div>
-        
-        }
     </div>
+   
+        <h1 class="display-6"></h1>
+
+        <div class="card-columns">
+            @foreach (var product in Model.Products)
+            {
+                <div class="card">
+                    <div class="card-img" style="background-image: url('@product.Image');"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Title</h5>
+                    </div>
+
+                </div>
+
+            }
+        </div>
