@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using HW1.Models;
-using HW1.Services;
+using RedhawksTradingPost.Models;
+using RedhawksTradingPost.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace HW1.Pages
+namespace RedhawksTradingPost.Pages
 {
     public class IndexModel : PageModel
     {

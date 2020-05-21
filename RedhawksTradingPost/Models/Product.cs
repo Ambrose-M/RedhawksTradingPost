@@ -6,7 +6,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace HW1.Models
+namespace RedhawksTradingPost.Models
 {
     public class Product
     {
