@@ -5,18 +5,24 @@
 }
 
     <div class="text-center">
-        <h1 class="display-4">RedHawks Trading Post</h1>
+        <h1 class="display-4">
+            RedHawks Trading Post
+        </h1>
     </div>
+
     <div class="card-columns">
         @foreach (var product in Model.Products)
         {
-        <div class="card">
-            <div class="card-img" style="background-image: url('@product.Image');"></div>
-            <div class="card-body">
-                <h5 class="card-title">@product.Title</h5>
+            <div class="card">
+                <div class="card-img" style="background-image: url('@product.Image');">
+
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">
+                        @product.Title
+                    </h5>
+                </div>
             </div>
-         
-        </div>
-        
         }
     </div>
