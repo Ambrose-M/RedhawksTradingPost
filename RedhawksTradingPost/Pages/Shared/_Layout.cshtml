@@ -17,16 +17,23 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!--Search bar and button-->
                 <div class="collapse navbar-collapse ">
                     <form class="input-group my-2 my-lg-1 mx-3">
                         <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn  btn-outline-dark text-light bg-dark" type="submit"><i class="align-middle material-icons md-18 ">search</i></button>
                     </form>
+
                     <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                         <ul class="navbar-nav flex-grow-1 ">
+
+                            <!--Add button-->
                             <li class="nav-item ">
                                 <a class="nav-link text-dark mt-lg-1" asp-area="" asp-page="/CreatePostPage"><i class="align-middle material-icons md-48">add_box</i></a>
                             </li>
+
+                            <!--User button-->
                             <li class="nav-item">
                                 <a class="nav-link text-dark mt-1" m- asp-area="" asp-page="/UserPage"><i class="material-icons md-48">account_box</i></a>
                             </li>
