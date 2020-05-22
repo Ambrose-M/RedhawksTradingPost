@@ -63,9 +63,13 @@
     <textarea id="description" rows="10" cols="100"></textarea>
 </p>
 
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" class="btn btn-primary" name="fileToUpload" id="fileToUpload">
+    <input type="submit" class="btn btn-primary" value="Upload Image" name="upload">
+</form>
+
 <p>
     <input type="button" class="btn btn-primary" value="Delete" />
     <input type="button" class="btn btn-primary" value="Submit" />
 </p>
-
-<img src="~/img/postingpage.JPG" />so if
