@@ -3,20 +3,25 @@
 @{
     ViewData["Title"] = "CreatePostPage";
 }
-<!--Page Title-->
-<h1>Create New Post</h1>
 
-<!--Posting title text box-->
-<label>
-    Posting Title
-</label>
-<p>
+<!--Page Title-->
+<h1>
+    Create New Post
+</h1>
+
+<div class="title_and_buttons">
+    <!--Posting title text box-->
+    <h4>
+        Posting Title
+    </h4>
+
+    <!--Title text area-->
     <textarea id="title" rows="1" cols="80" maxlength="100" required></textarea>
 
     <!--Category drop down button-->
     <div class="btn-group">
         <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="category">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="category" button style="margin:0px 10px 20px 20px">
                 Category
             </button>
             <div class="dropdown-menu">
@@ -34,7 +39,7 @@
     <!--Condition drop down button-->
     <div class="btn-group">
         <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="condition">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="condition" button style="margin:0px 10px 20px 10px">
                 Condition
             </button>
             <div class="dropdown-menu">
@@ -49,7 +54,7 @@
     <!--Owner drop down button-->
     <div class="btn-group">
         <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="owner">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="owner" button style="margin:0px 10px 20px 10px">
                 Owner
             </button>
             <div class="dropdown-menu">
@@ -58,25 +63,25 @@
             </div>
         </div>
     </div>
-</p>
+</div>
 
-<!--Item description text box-->
-<label>
-    Item Description
-</label>
-<p>
-    <textarea id="description" rows="10" cols="100" maxlength="1000" required></textarea>
-</p>
+<div class="item_description">
+    <!--Item description text box-->
+    <h4>
+        Item Description
+    </h4>
+    <textarea id="description" rows="15" cols="135" maxlength="1000" required></textarea>
+</div>
 
-<!--Uploading images-->
-<form action="upload.php" method="post" enctype="multipart/form-data">
-    Select image to upload:
-    <input type="file" class="btn btn-primary" name="fileToUpload" id="fileToUpload">
-    <input type="submit" class="btn btn-primary" value="Upload Image" name="upload">
-</form>
+<div class="image_and_delete_and_submit_buttons" style="margin:20px 0px 0px 0px">
+    <!--Uploading images-->
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        Select image to upload:
+        <input type="file" class="btn btn-primary" name="fileToUpload" id="fileToUpload" button style="padding:3px">
+        <input type="submit" class="btn btn-primary" value="Upload Image" name="upload">
 
-<!--Delete and submit buttons-->
-<p>
-    <input type="button" class="btn btn-primary" value="Delete" />
-    <input type="button" class="btn btn-primary" value="Submit" />
-</p>
+        <!--Delete and submit buttons-->
+        <input type="button" class="btn btn-primary" value="Delete" button style="margin:0px 10px 0px 190px"/>
+        <input type="button" class="btn btn-primary" value="Submit" button style="margin:0px 10px 0px 10px"/>
+    </form>
+</div>
