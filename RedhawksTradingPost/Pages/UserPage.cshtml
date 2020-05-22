@@ -36,8 +36,20 @@
         </div>
 
         <!--container for product-->
-        <div class="col-9" style="background-color:pink">
-            <h1>dummy text</h1>
+        <div class="col-9">
+            <div class="card-columns">
+                @foreach (var product in Model.Products)
+                {
+                    <div class="card">
+                        <div class="card-img" style="background-image: url('@product.Image');"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Title</h5>
+
+                            <a href="/ItemPage" class="btn btn-primary stretched-link">View Details</a>
+                        </div>
+                    </div>
+                }
+            </div>
         </div>
     </div>
     
