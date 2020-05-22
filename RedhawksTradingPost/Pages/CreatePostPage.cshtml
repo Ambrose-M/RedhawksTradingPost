@@ -3,72 +3,79 @@
 @{
     ViewData["Title"] = "CreatePostPage";
 }
-
+<!--Page Title-->
 <h1>Create New Post</h1>
 
+<!--Posting title text box-->
 <label>
     Posting Title
 </label>
-<input type="text" id="title" />
-
-<div class="btn-group">
-    <div class="dropdown">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="category">
-            Category
-        </button>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Appliances</a>
-            <a class="dropdown-item" href="#">Arts+Crafts</a>
-            <a class="dropdown-item" href="#">Books</a>
-            <a class="dropdown-item" href="#">Electronics</a>
-            <a class="dropdown-item" href="#">Furniture</a>
-            <a class="dropdown-item" href="#">Office Supplies</a>
-            <a class="dropdown-item" href="#">Tools</a>
-        </div>
-    </div>
-</div>
-
-<div class="btn-group">
-    <div class="dropdown">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="condition">
-            Condition
-        </button>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">New</a>
-            <a class="dropdown-item" href="#">Good</a>
-            <a class="dropdown-item" href="#">Fair</a>
-            <a class="dropdown-item" href="#">Worn</a>
-        </div>
-    </div>
-</div>
-
-<div class="btn-group">
-    <div class="dropdown">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="owner">
-            Owner
-        </button>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">SU Property</a>
-            <a class="dropdown-item" href="#">Personal</a>
-        </div>
-    </div>
-</div>
-
-
 <p>
-    <label>
-        Item Description
-    </label>
+    <textarea id="title" rows="1" cols="80" maxlength="100" required></textarea>
 
-    <textarea id="description" rows="10" cols="100"></textarea>
+    <!--Category drop down button-->
+    <div class="btn-group">
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="category">
+                Category
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Appliances</a>
+                <a class="dropdown-item" href="#">Arts+Crafts</a>
+                <a class="dropdown-item" href="#">Books</a>
+                <a class="dropdown-item" href="#">Electronics</a>
+                <a class="dropdown-item" href="#">Furniture</a>
+                <a class="dropdown-item" href="#">Office Supplies</a>
+                <a class="dropdown-item" href="#">Tools</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Condition drop down button-->
+    <div class="btn-group">
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="condition">
+                Condition
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">New</a>
+                <a class="dropdown-item" href="#">Good</a>
+                <a class="dropdown-item" href="#">Fair</a>
+                <a class="dropdown-item" href="#">Worn</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Owner drop down button-->
+    <div class="btn-group">
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="owner">
+                Owner
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">SU Property</a>
+                <a class="dropdown-item" href="#">Personal</a>
+            </div>
+        </div>
+    </div>
 </p>
 
+<!--Item description text box-->
+<label>
+    Item Description
+</label>
+<p>
+    <textarea id="description" rows="10" cols="100" maxlength="1000" required></textarea>
+</p>
+
+<!--Uploading images-->
 <form action="upload.php" method="post" enctype="multipart/form-data">
     Select image to upload:
     <input type="file" class="btn btn-primary" name="fileToUpload" id="fileToUpload">
     <input type="submit" class="btn btn-primary" value="Upload Image" name="upload">
 </form>
 
+<!--Delete and submit buttons-->
 <p>
     <input type="button" class="btn btn-primary" value="Delete" />
     <input type="button" class="btn btn-primary" value="Submit" />
