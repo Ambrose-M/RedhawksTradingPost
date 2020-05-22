@@ -6,9 +6,14 @@
 
 <h1>Create New Post</h1>
 
+<label>
+    Posting Title
+</label>
+<input type="text" id="title" />
+
 <div class="btn-group">
     <div class="dropdown">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="category">
             Category
         </button>
         <div class="dropdown-menu">
@@ -25,7 +30,7 @@
 
 <div class="btn-group">
     <div class="dropdown">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="condition">
             Condition
         </button>
         <div class="dropdown-menu">
@@ -39,7 +44,7 @@
 
 <div class="btn-group">
     <div class="dropdown">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="owner">
             Owner
         </button>
         <div class="dropdown-menu">
@@ -49,4 +54,18 @@
     </div>
 </div>
 
-<img src="~/img/postingpage.JPG"/>
+
+<p>
+    <label>
+        Item Description
+    </label>
+
+    <textarea id="description" rows="10" cols="100"></textarea>
+</p>
+
+<p>
+    <input type="button" class="btn btn-primary" value="Delete" />
+    <input type="button" class="btn btn-primary" value="Submit" />
+</p>
+
+<img src="~/img/postingpage.JPG" />so if
