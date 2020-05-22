@@ -24,18 +24,22 @@
 
 <h3 class="display-4"></h3>
 
-<div class="card-columns">
-    @foreach (var product in Model.Products)
-    {
-        <div class="card">
-            <div class="card-img" style="background-image: url('@product.Image');"></div>
-            <div class="card-body">
-                <h5 class="card-title">@product.Title</h5>
-
-                <a href="/ItemPage" class="btn btn-primary stretched-link">View Details</a>
+<div class="card-deck">
+    <div class="card-columns">
+        @foreach (var product in Model.Products)
+        {
+            <div class="card style">
+                <div class="card-img" style="background-image: url('@product.Image');"></div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">@product.Title</h5>
+                </div>
+                <div class="card-footer text-right">
+                    <a href="/ItemPage" class="btn btn-primary stretched-link mt-auto">View Details</a>
+                    <button class="btn btn-danger stretched-link mt-auto">Report</button>
+                </div>
             </div>
-        </div>
-    }
+        }
+    </div>
 </div>
 
 <ul class="pagination justify-content-center">
