@@ -15,13 +15,14 @@
         Posting Title
     </h4>
 
-    <!--Title text area-->
+    <!--Title text area, max = 100 characters-->
     <textarea id="title" rows="1" cols="80" maxlength="100" required></textarea>
 
     <!--Category drop down button-->
     <div class="btn-group">
         <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="category" button style="margin:0px 10px 20px 20px">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" 
+                    id="category" button style="margin:0px 10px 20px 20px">
                 Category
             </button>
             <div class="dropdown-menu">
@@ -36,10 +37,11 @@
         </div>
     </div>
 
-    <!--Condition drop down button-->
+    <!--Condition drop down button: new, good, fair, worn-->
     <div class="btn-group">
         <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="condition" button style="margin:0px 10px 20px 10px">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" 
+                    id="condition" button style="margin:0px 10px 20px 10px">
                 Condition
             </button>
             <div class="dropdown-menu">
@@ -51,10 +53,11 @@
         </div>
     </div>
 
-    <!--Owner drop down button-->
+    <!--Owner drop down button, either SU property or personal property-->
     <div class="btn-group">
         <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="owner" button style="margin:0px 10px 20px 10px">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" 
+                    id="owner" button style="margin:0px 10px 20px 10px">
                 Owner
             </button>
             <div class="dropdown-menu">
@@ -66,7 +69,7 @@
 </div>
 
 <div class="item_description">
-    <!--Item description text box-->
+    <!--Item description text box, max = 1000 characters-->
     <h4>
         Item Description
     </h4>
@@ -77,7 +80,8 @@
     <!--Uploading images-->
     <form action="upload.php" method="post" enctype="multipart/form-data">
         Select image to upload:
-        <input type="file" class="btn btn-primary" name="fileToUpload" id="fileToUpload" accept=".gif,.jpg,.png" style="padding:3px">
+        <input type="file" class="btn btn-primary" name="fileToUpload" 
+               id="fileToUpload" accept=".gif,.jpg,.png" style="padding:3px">
         <input type="submit" class="btn btn-primary" value="Upload Image" name="upload">
 
         <!--Delete and submit buttons-->
