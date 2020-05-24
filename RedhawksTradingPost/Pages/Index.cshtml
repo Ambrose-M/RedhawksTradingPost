@@ -3,6 +3,8 @@
 @{
     ViewData["Title"] = "Home Page";
 }
+
+<!--Sort By drop-down menu-->
 <div class="btn-group">
     <div class="dropdown">
         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
@@ -15,6 +17,7 @@
     </div>
 </div>
 
+<!--Category collapsible menu-->
 <div class="btn-group">
     <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Categories</button>
     <div id="demo" class="collapse ml-3 mt-2">
@@ -22,8 +25,10 @@
     </div>
 </div>
 
+<!--Blank space between menus and item tiles-->
 <h3 class="display-4"></h3>
 
+<!--Item Tiles-->
 <div class="card-deck">
     <div class="card-columns">
         @foreach (var product in Model.Products)
@@ -45,6 +50,7 @@
     </div>
 </div>
 
+<!--Page selection-->
 <ul class="pagination justify-content-center">
     <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
     <li class="page-item active"><a class="page-link" href="#">1</a></li>
