@@ -48,7 +48,37 @@
                             </div>
                             <div class="card-footer text-right">
                                 <a href="/ItemPage" class="btn btn-primary mt-auto">View Details</a>
-                                <button class="btn btn-danger mt-auto">Delete</button>
+ 
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+                                    Delete
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Report Item</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body text-left">
+                                                Click 'yes' to confirm deleting this item.
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Yes</button>
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     }
