@@ -4,11 +4,12 @@
     ViewData["Title"] = "ItemPage";
 }
 
-
+    <!--Item Picture-->
     <p style="text-align:center;">
         <img src="~/img/modernChair.png" width="350" height="450">
     </p>
 
+    <!--Item Description container-->
     <div class="container">
         <center>
             <h1>Modern Office Chair</h1>
@@ -28,7 +29,38 @@
             <p>Posted May 24, 2020.</p>
 
             <br>
-            <a href="/Report" class="btn btn-danger">Report Item</a>
+
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+                Report Item
+            </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Report Item</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            Click 'yes' to confirm reporting this item for violating the Redhawks
+                            Trading Post's Terms of Use.
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Yes</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </center>
     </div>
