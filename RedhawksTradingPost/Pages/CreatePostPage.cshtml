@@ -86,6 +86,22 @@
 
         <!--Delete and submit buttons-->
         <input type="button" class="btn btn-primary" value="Delete" button style="margin:0px 10px 0px 190px"/>
-        <input type="button" class="btn btn-primary" value="Submit" button style="margin:0px 10px 0px 10px"/>
+        <input type="button" class="btn btn-primary" value="Submit" button style="margin:0px 10px 0px 10px"
+               onclick="@CreatePost()"/>
     </form>
 </div>
+
+<!--Code for creating a new product-->
+@{
+    string title;
+    string category;
+    string condition;
+    string owner;
+    string description;
+    string image;
+
+    string CreatePost()
+    {
+        return "Post Created!";
+    }
+}
