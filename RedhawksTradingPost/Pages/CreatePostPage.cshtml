@@ -73,35 +73,36 @@
     <h4>
         Item Description
     </h4>
-    <textarea id="description" rows="15" cols="135" maxlength="1000" required></textarea>
+    <textarea id="description" name="description" rows="15" cols="135" maxlength="1000" required></textarea>
 </div>
 
 <div class="image_and_delete_and_submit_buttons" style="margin:20px 0px 0px 0px">
     <!--Uploading images-->
     <form action="upload.php" method="post" enctype="multipart/form-data">
         Select image to upload:
-        <input type="file" class="btn btn-primary" name="fileToUpload" 
+        <input type="file" class="btn btn-primary" name="fileToUpload"
                id="fileToUpload" accept=".gif,.jpg,.png" style="padding:3px">
         <input type="submit" class="btn btn-primary" value="Upload Image" name="upload">
 
         <!--Delete and submit buttons-->
-        <input type="button" class="btn btn-primary" value="Delete" button style="margin:0px 10px 0px 190px"/>
+        <input type="button" class="btn btn-primary" value="Delete" button style="margin:0px 10px 0px 190px" />
         <input type="button" class="btn btn-primary" value="Submit" button style="margin:0px 10px 0px 10px"
-               onclick="@CreatePost()"/>
+               onclick="@CreatePost()" />
     </form>
 </div>
 
 <!--Code for creating a new product-->
 @{
-    string title;
-    string category;
-    string condition;
-    string owner;
-    string description;
-    string image;
-
     string CreatePost()
     {
+        RedhawksTradingPost.Models.Product listing = new RedhawksTradingPost.Models.Product();
+        listing.ID = Request.Query["description"];
+        listing.Maker = Request.Query["description"];
+        listing.Image = Request.Query["description"];
+        listing.Url = Request.Query["description"];
+        listing.Title = Request.Query["description"];
+        listing.Description = Request.Query["description"];
+        string json = Newtonsoft.Json.JsonConvert.SerializeObject(listing);
         return "Post Created!";
     }
 }
