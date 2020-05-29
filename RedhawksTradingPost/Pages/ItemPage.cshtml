@@ -4,11 +4,14 @@
     ViewData["Title"] = "ItemPage";
 }
 
-<!--Making item images display side-by-side using the CSS float property-->
+<!--Styles in CSS-->
 <html>
 <head>
     <style>
-        * {
+
+        /*Making item images display side-by-side using the CSS float property*/
+        *
+        {
             box-sizing: border-box;
         }
 
@@ -18,11 +21,18 @@
             padding: 5px;
         }
 
-        .row::after {
+        .row::after
+        {
             content: "";
             clear: both;
             display: table;
         }
+
+        /*Making links blue*/
+        a {
+            color: blue;
+        }
+
     </style>
 </head>
 
