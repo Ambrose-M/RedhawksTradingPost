@@ -20,6 +20,13 @@ namespace RedhawksTradingPost.Services
         {
             get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json"); }
         }
+        /// <summary>
+        /// Read data from office Supplies Product json 
+        /// </summary>
+        private string OfficeSuppliesJsonFileName
+        {
+            get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "OfficeSuppliesProduct.json"); }
+        }
 
         public IEnumerable<Product> GetProducts()
         {
