@@ -4,22 +4,50 @@
     ViewData["Title"] = "ItemPage";
 }
 
-<!--Item Pictures-->
-<div class="row">
-    <div class="column">
-        <img src="~/img/modernChair.png" width="300" height="400">
+<!--Making item images display side-by-side using the CSS float property-->
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Item Pictures-->
+    <div class="row">
+        <div class="column">
+            <!--Item Picture 1-->
+            <img src="~/img/modernChair.png" width="300" height="400">
+        </div>
+
+        <div class="column">
+            <!--Item Picture 2-->
+            <img src="~/img/modernChairSide.png" width="300" height="400">
+        </div>
+
+        <div class="column">
+            <!--Item Picture 3-->
+            <img src="~/img/modernChairBack.png" width="300" height="400">
+        </div>
     </div>
 
-    <div class="column">
-        <!--Item Picture 2-->
-        <img src="~/img/modernChairSide.png" width="300" height="400">
-    </div>
+</body>
+</html>
 
-    <div class="column">
-        <!--Item Picture 3-->
-        <img src="~/img/modernChairBack.png" width="300" height="400">
-    </div>
-</div>
 
 <!--Item Description container-->
 <div class="container">
@@ -36,6 +64,7 @@
         </p>
 
         <br>
+
         <p>Email offer to: <a href="/ItemPage"> hellera@seattleu.edu</a> </p>
 
         <p>Posted May 24, 2020.</p>
