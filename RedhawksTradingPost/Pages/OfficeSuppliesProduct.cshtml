@@ -4,5 +4,61 @@
     ViewData["Title"] = "OfficeSuppliesProduct";
 }
 
-<h1>OfficeSuppliesProduct</h1>
+<!--Sort By drop-down menu-->
+<div class="btn-group">
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Sort By...
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Date: Newest to Oldest</a>
+            <a class="dropdown-item" href="#">Date: Oldest to Newest</a>
+            <a class="dropdown-item" href="#">Condition: New</a>
+            <a class="dropdown-item" href="#">Condition: Good</a>
+            <a class="dropdown-item" href="#">Condition: Fair</a>
+            <a class="dropdown-item" href="#">Condition: Worn</a>
+        </div>
+    </div>
+</div>
+
+<!--Category collapsible menu-->
+<div class="btn-group">
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Categories</button>
+    <div id="demo" class="collapse ml-3 mt-2">
+        <a href="#">Appliances</a>
+        |
+        <a href="#">Arts+Crafts </a>
+        |
+        <a href="#">Books </a>
+        |
+        <a href="#">Electronics </a>
+        |
+        <a href="#">Furniture </a>
+        |
+        <a href="/OfficeSuppliesProduct">Office Supplies </a>
+        |
+        <a href="#">Tools </a>
+    </div>
+</div>
+
+<!--Blank space between menus and item tiles-->
+<h3 class="display-4"></h3>
+
+<!--Item Tiles-->
+<div class="card-deck">
+    <div class="card-columns">
+        @foreach (var product in Model.Products)
+        {
+            <div class="card style">
+                <div class="card-img" style="background-image: url('@product.Image');"></div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">@product.Title</h5>
+                </div>
+                <div class="card-footer text-right">
+                    <a href="/ItemPage" class="btn btn-primary stretched-link mt-auto">View Details</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
 
