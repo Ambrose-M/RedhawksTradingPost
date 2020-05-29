@@ -20,8 +20,9 @@ namespace RedhawksTradingPost.Services
         {
             get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json"); }
         }
+
         /// <summary>
-        /// Read data from office Supplies Product json 
+        /// path to office Supplies Product json 
         /// </summary>
         private string OfficeSuppliesJsonFileName
         {
@@ -31,6 +32,22 @@ namespace RedhawksTradingPost.Services
         public IEnumerable<Product> GetProducts()
         {
             using (var jsonFileReader = File.OpenText(JsonFileName))
+            {
+                return JsonSerializer.Deserialize<Product[]>(jsonFileReader.ReadToEnd(),
+                    new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+            }
+        }
+
+        /// <summary>
+        /// Function read data from office suppliesproduct
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerable<Product> GetOfficeSuppliesProducts()
+        {
+            using (var jsonFileReader = File.OpenText(OfficeSuppliesJsonFileName))
             {
                 return JsonSerializer.Deserialize<Product[]>(jsonFileReader.ReadToEnd(),
                     new JsonSerializerOptions
