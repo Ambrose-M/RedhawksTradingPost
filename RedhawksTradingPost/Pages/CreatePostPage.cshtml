@@ -102,10 +102,9 @@
         listing.Url = Request.Query["description"];
         listing.Title = Request.Query["description"];
         listing.Description = Request.Query["description"];
-        string json = Newtonsoft.Json.JsonConvert.SerializeObject(listing);
 
-        System.IO.File.AppendAllText(System.IO.Path.Combine(JsonFileProductService.WebHostEnvironment.WebRootPath, "data", "products.json"), json);
-        Services.JsonFileProductService new_post = new Services.JsonFileProductService;
+        Model.ProductService.AddProduct(listing);
+
         return "Post Created!";
     }
 }
