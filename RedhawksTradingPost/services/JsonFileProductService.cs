@@ -71,11 +71,12 @@ namespace RedhawksTradingPost.Services
             }
         }
 
-        public void AddProduct(Product listing)
+        public void AddProduct(Product Listing)
         {
-            IEnumerable<Product> temporary = this.GetProducts();
-            string ConvertedListing = JsonSerializer.Serialize<Product>(listing);
-            File.AppendAllText(JsonFileName, ConvertedListing);
+            List<Product> Temporary = this.GetProducts().ToList();
+            Temporary.Add(Listing);
+            string ConvertedListing = JsonSerializer.Serialize<List<Product>>(Temporary);
+            File.WriteAllText(JsonFileName, ConvertedListing);
 
         }
     }
