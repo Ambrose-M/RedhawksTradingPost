@@ -105,7 +105,7 @@
         string json = Newtonsoft.Json.JsonConvert.SerializeObject(listing);
 
         System.IO.File.AppendAllText(System.IO.Path.Combine(JsonFileProductService.WebHostEnvironment.WebRootPath, "data", "products.json"), json);
-
+        Services.JsonFileProductService new_post = new Services.JsonFileProductService;
         return "Post Created!";
     }
 }
