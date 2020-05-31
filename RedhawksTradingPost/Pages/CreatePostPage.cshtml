@@ -96,12 +96,12 @@
     string CreatePost()
     {
         RedhawksTradingPost.Models.Product listing = new RedhawksTradingPost.Models.Product();
-        listing.ID = Request.Query["description"];
-        listing.Maker = Request.Query["description"];
-        listing.Image = Request.Query["description"];
-        listing.Url = Request.Query["description"];
-        listing.Title = Request.Query["description"];
-        listing.Description = Request.Query["description"];
+        listing.ID = "id";
+        listing.Maker = "maker";
+        listing.Image = "image";
+        listing.Url = "url";
+        listing.Title = "title";
+        listing.Description = "description";
 
         Model.ProductService.AddProduct(listing);
 
