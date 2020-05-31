@@ -86,7 +86,8 @@
 
         <!--Delete and submit buttons-->
         <a href="/Index" type="button" class="btn btn-primary" button style="margin:0px 10px 0px 190px">Delete</a>
-        <a href="/UserPage" type="button" class="btn btn-primary" button style="margin:0px 10px 0px 10px">Submit</a>
+        <a href="/UserPage" type="button" class="btn btn-primary" button style="margin:0px 10px 0px 10px"
+           onclick="@CreatePost()">Submit</a>
     </form>
 </div>
 
@@ -102,6 +103,9 @@
         listing.Title = Request.Query["description"];
         listing.Description = Request.Query["description"];
         string json = Newtonsoft.Json.JsonConvert.SerializeObject(listing);
+
+        System.IO.File.AppendAllText(System.IO.Path.Combine(JsonFileProductService.WebHostEnvironment.WebRootPath, "data", "products.json"), json);
+
         return "Post Created!";
     }
 }
