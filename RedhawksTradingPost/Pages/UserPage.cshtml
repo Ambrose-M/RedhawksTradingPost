@@ -55,22 +55,27 @@
         <div class="col-9">
             <div class="card-deck">
                 <div class="card-columns">
-                    @foreach (var product in Model.Products)
-                    {
-                        <div class="card style">
-                            <div class="card-img" style="background-image: url('@product.Image');"></div>
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">@product.Title</h5>
-                            </div>
-                            <div class="card-footer text-right">
-                                <a href="/ItemPage" class="btn btn-primary mt-auto">View Details</a>
 
-                                <!-- Button to Open the Modal -->
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#UserPageModal">
-                                    Delete
-                                </button>
+                    <!--create cards-->
+                    @{
+                        List<RedhawksTradingPost.Models.Product> list = Model.Products.ToList();
+                        for (int i = 0; i < list.Count(); i++)
+                        {
+                            <div class="card style">
+                                <div class="card-img" style="background-image: url('@list[i].Image');"></div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">@list[i].Title</h5>
+                                </div>
+                                <div class="card-footer text-right">
+                                    <a href="/ItemPage" class="btn btn-primary mt-auto">View Details</a>
+
+                                    <!--Button to Open the Modal-->
+                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#UserPageModal">
+                                        Delete
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        }
                     }
 
                     <!-- The Modal -->
@@ -111,13 +116,13 @@
 
                 <!--menu-->
                 <div class="collapse " id="collapseExample">
-                        <label class="checkbox-inline p-1 m-3"><input type="checkbox" class="m-1">Appliances</label>
-                        <label class="checkbox-inline p-1 m-3"><input type="checkbox" class="m-1">Arts+Crafts</label>
-                        <label class="checkbox-inline p-1 m-3"><input type="checkbox" class="m-1">Books </label>
-                        <label class="checkbox-inline p-1 m-3"><input type="checkbox" class="m-1">Electronics </label>
-                        <label class="checkbox-inline p-1 m-3"><input type="checkbox" class="m-1">Furniture </label>
-                        <label class="checkbox-inline p-1 m-3"><input type="checkbox" class="m-1">Office Supplies </label>
-                        <label class="checkbox-inline p-1 m-3"><input type="checkbox" class="m-1">Tools </label>
+                    <label class="checkbox-inline p-1 m-3"><input type="checkbox" class="m-1">Appliances</label>
+                    <label class="checkbox-inline p-1 m-3"><input type="checkbox" class="m-1">Arts+Crafts</label>
+                    <label class="checkbox-inline p-1 m-3"><input type="checkbox" class="m-1">Books </label>
+                    <label class="checkbox-inline p-1 m-3"><input type="checkbox" class="m-1">Electronics </label>
+                    <label class="checkbox-inline p-1 m-3"><input type="checkbox" class="m-1">Furniture </label>
+                    <label class="checkbox-inline p-1 m-3"><input type="checkbox" class="m-1">Office Supplies </label>
+                    <label class="checkbox-inline p-1 m-3"><input type="checkbox" class="m-1">Tools </label>
                 </div>
             </div>
         </div>
