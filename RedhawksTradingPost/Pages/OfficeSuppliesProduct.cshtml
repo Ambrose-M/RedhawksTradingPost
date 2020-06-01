@@ -4,6 +4,19 @@
     ViewData["Title"] = "OfficeSuppliesProduct";
 }
 
+<!--Now Viewing drop-down menu-->
+<div class="btn-group">
+    <div class="dropdown">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+            Now Viewing: Personal & SU Property
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">View: Personal Property Only</a>
+            <a class="dropdown-item" href="#">View: SU Property Only</a>
+        </div>
+    </div>
+</div>
+
 <!--Sort By drop-down menu-->
 <div class="btn-group">
     <div class="dropdown">
@@ -21,23 +34,21 @@
     </div>
 </div>
 
-<!--Category collapsible menu-->
+<!--Category drop-down menu-->
 <div class="btn-group">
-    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Categories</button>
-    <div id="demo" class="collapse ml-3 mt-2">
-        <a href="#">Appliances</a>
-        |
-        <a href="#">Arts+Crafts </a>
-        |
-        <a href="#">Books </a>
-        |
-        <a href="#">Electronics </a>
-        |
-        <a href="#">Furniture </a>
-        |
-        <a href="/OfficeSuppliesProduct">Office Supplies </a>
-        |
-        <a href="#">Tools </a>
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Categories
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Appliances</a>
+            <a class="dropdown-item" href="#">Arts+Crafts</a>
+            <a class="dropdown-item" href="#">Books</a>
+            <a class="dropdown-item" href="#">Electronics</a>
+            <a class="dropdown-item" href="#">Furniture</a>
+            <a class="dropdown-item" href="/OfficeSuppliesProduct">Office Supplies</a>
+            <a class="dropdown-item" href="#">Tools</a>
+        </div>
     </div>
 </div>
 
