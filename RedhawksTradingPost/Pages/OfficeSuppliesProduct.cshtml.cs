@@ -13,9 +13,20 @@ namespace RedhawksTradingPost.Pages
 
     public class OfficeSuppliesProductModel : PageModel
     {
+        //create logger
         private readonly ILogger<OfficeSuppliesProductModel> _logger;
+
+        //json file
         public JsonFileProductService ProductService;
+
+        //json file list
         public IEnumerable<Product> Products { get; private set; }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="productService"></param>
         public OfficeSuppliesProductModel(
             ILogger<OfficeSuppliesProductModel> logger,
             JsonFileProductService productService)
@@ -23,6 +34,10 @@ namespace RedhawksTradingPost.Pages
             _logger = logger;
             ProductService = productService;
         }
+
+        /// <summary>
+        /// Get json element in Products list 
+        /// </summary>
         public void OnGet()
         {
             Products = ProductService.GetOfficeSuppliesProducts();
