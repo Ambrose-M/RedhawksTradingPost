@@ -74,7 +74,7 @@ namespace RedhawksTradingPost.Services
         public void AddProduct(Product Listing)
         {
             List<Product> Temporary = this.GetProducts().ToList();
-            Temporary.Add(Listing);
+            Temporary.Insert(0, Listing);
             string ConvertedListing = JsonSerializer.Serialize<List<Product>>(Temporary);
             File.WriteAllText(JsonFileName, ConvertedListing);
 
