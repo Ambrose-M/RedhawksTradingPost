@@ -21,7 +21,7 @@
     <!--Category drop down button-->
     <div class="btn-group">
         <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" 
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                     id="category" button style="margin:0px 10px 20px 20px">
                 Category
             </button>
@@ -40,7 +40,7 @@
     <!--Condition drop down button: new, good, fair, worn-->
     <div class="btn-group">
         <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" 
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                     id="condition" button style="margin:0px 10px 20px 10px">
                 Condition
             </button>
@@ -56,7 +56,7 @@
     <!--Owner drop down button, either SU property or personal property-->
     <div class="btn-group">
         <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" 
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                     id="owner" button style="margin:0px 10px 20px 10px">
                 Owner
             </button>
@@ -94,14 +94,16 @@
 @{
     string CreatePost()
     {
+        <!--Creates the new Product to add-->
         RedhawksTradingPost.Models.Product listing = new RedhawksTradingPost.Models.Product();
+        <!--Product attributes, currently using filler text-->
         listing.ID = "id";
         listing.Maker = "maker";
         listing.Image = "image";
         listing.Url = "url";
         listing.Title = "title";
         listing.Description = "description";
-
+        <!--Adds the product to the list of current postings-->
         Model.ProductService.AddProduct(listing);
 
         return "Post Created!";
