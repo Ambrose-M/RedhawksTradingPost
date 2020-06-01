@@ -70,14 +70,18 @@ namespace RedhawksTradingPost.Services
                     });
             }
         }
-
+        // Add the Product parameter to the list of current products in products.json
+        // The new Product is added to the beginning of the list
         public void AddProduct(Product Listing)
         {
+            // Generates the list of current products
             List<Product> Temporary = this.GetProducts().ToList();
+            // Insert the new product at the beginning of the list
             Temporary.Insert(0, Listing);
+            // Serialize the new list
             string ConvertedListing = JsonSerializer.Serialize<List<Product>>(Temporary);
+            // Overwrite the existing products.json file
             File.WriteAllText(JsonFileName, ConvertedListing);
-
         }
     }
 }
