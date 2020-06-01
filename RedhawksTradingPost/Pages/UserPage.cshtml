@@ -59,7 +59,7 @@
                     <!--create cards-->
                     @{
                         List<RedhawksTradingPost.Models.Product> list = Model.Products.ToList();
-                        for (int i = 0; i < list.Count(); i++)
+                        for (int i = 0; i < 5; i++)
                         {
                             <div class="card style">
                                 <div class="card-img" style="background-image: url('@list[i].Image');"></div>
