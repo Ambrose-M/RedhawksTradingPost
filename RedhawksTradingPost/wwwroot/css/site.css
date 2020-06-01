@@ -67,8 +67,8 @@ a {
 
     .btn-primary:hover {
         color: #fff;
-        background-color: #e9a8a6;
-        border-color: #e9a8a6;
+        background-color: #0800ff;
+        border-color: #0800ff;
     }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
