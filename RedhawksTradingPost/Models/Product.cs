@@ -10,14 +10,29 @@ namespace RedhawksTradingPost.Models
 {
     public class Product
     {
-       public string ID { get; set; }
+        //ID
+        public string ID { get; set; }
+
+        //Maker
         public string Maker { get; set; }
+
+        //Image
         [JsonPropertyName("img")]
         public string Image { get; set; }
+
+        //Url
         public string Url { get; set; }
-        public string  Title { get; set; }
+
+        //Title
+        public string Title { get; set; }
+
+        //Description
         public string Description { get; set; }
+
+        //Ratings
         public int[] Ratings { get; set; }
+
+        //Override ToString 
         public override string ToString() => JsonSerializer.Serialize<Product>(this);
     }
 }
