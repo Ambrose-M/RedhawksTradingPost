@@ -12,9 +12,20 @@ namespace RedhawksTradingPost.Pages
 {
     public class UserPageModel : PageModel
     {
+        //create logger
         private readonly ILogger<UserPageModel> _logger;
+
+        //json file
         public JsonFileProductService ProductService;
+
+        //json file list
         public IEnumerable<Product> Products { get; private set; }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="productService"></param>
         public UserPageModel(
             ILogger<UserPageModel> logger,
             JsonFileProductService productService)
@@ -23,6 +34,9 @@ namespace RedhawksTradingPost.Pages
             ProductService = productService;
         }
 
+        /// <summary>
+        /// Get json element in Products list 
+        /// </summary>
         public void OnGet()
         {
             Products = ProductService.GetProducts();
