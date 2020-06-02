@@ -6,66 +6,133 @@
 
 <!--Now Viewing drop-down menu-->
 <div class="btn-group">
+
+    <!--Drop Down class type-->
     <div class="dropdown">
+
+        <!--Drop down toggle button type-->
         <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
             Now Viewing: Personal & SU Property
         </button>
+
+        <!--Drop down menu-->
         <div class="dropdown-menu">
+
+            <!--Drop down menu item: Personal Property Only-->
             <a class="dropdown-item" href="#">View: Personal Property Only</a>
+
+            <!--Drop down menu item: SU Property Only-->
             <a class="dropdown-item" href="#">View: SU Property Only</a>
         </div>
     </div>
 </div>
 
+
 <!--Sort By drop-down menu-->
 <div class="btn-group">
+
+    <!--Drop Down class type-->
     <div class="dropdown">
+
+        <!--Drop down toggle button type-->
         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
             Sort By...
         </button>
+
+        <!--Drop down menu-->
         <div class="dropdown-menu">
+
+            <!--Drop down menu item: Date: Newest to Oldest-->
             <a class="dropdown-item" href="#">Date: Newest to Oldest</a>
+
+            <!--Drop down menu item: Date: Oldest to Newest-->
             <a class="dropdown-item" href="#">Date: Oldest to Newest</a>
+
+            <!--Drop down menu item: Condition: New-->
             <a class="dropdown-item" href="#">Condition: New</a>
+
+            <!--Drop down menu item: Condition: Good-->
             <a class="dropdown-item" href="#">Condition: Good</a>
+
+            <!--Drop down menu item: Condition: Fair-->
             <a class="dropdown-item" href="#">Condition: Fair</a>
+
+            <!--Drop down menu item: Condition: Worn-->
             <a class="dropdown-item" href="#">Condition: Worn</a>
         </div>
     </div>
 </div>
 
+
 <!--Category drop-down menu-->
 <div class="btn-group">
+
+    <!--Drop Down Class type-->
     <div class="dropdown">
+
+        <!--Drop down toggle button type-->
         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
             Filter by Category
         </button>
+
+        <!--Drop down menu-->
         <div class="dropdown-menu">
+
+            <!--Drop down menu item: Appliances-->
             <a class="dropdown-item" href="#">Appliances</a>
+
+            <!--Drop down menu item: Arts+Crafts-->
             <a class="dropdown-item" href="#">Arts+Crafts</a>
+
+            <!--Drop down menu item: Books-->
             <a class="dropdown-item" href="#">Books</a>
+
+            <!--Drop down menu item: Electronics-->
             <a class="dropdown-item" href="#">Electronics</a>
+
+            <!--Drop down menu item: Furniture-->
             <a class="dropdown-item" href="#">Furniture</a>
+
+            <!--Drop down menu item: Office Supplies-->
             <a class="dropdown-item" href="/OfficeSuppliesProduct">Office Supplies</a>
+
+            <!--Drop down menu item: Tools-->
             <a class="dropdown-item" href="#">Tools</a>
         </div>
     </div>
 </div>
 
+
 <!--Blank space between menus and item tiles-->
 <h3 class="display-4"></h3>
 
-<!--Item Tiles-->
+
+<!--Card Deck-->
 <div class="card-deck">
+
+    <!--Card Columns-->
     <div class="card-columns">
+
+        <!--For each Card-->
         @foreach (var product in Model.Products)
         {
+            <!--Card Style-->
             <div class="card style">
+
+                <!--Card Image-->
                 <div class="card-img" style="background-image: url('@product.Image');"></div>
+
+                <!--Card Body-->
                 <div class="card-body d-flex flex-column">
+
+                    <!--Card Title-->
                     <h5 class="card-title">@product.Title</h5>
                 </div>
+
+                <!--Card Footer-->
                 <div class="card-footer text-right">
+
+                    <!--Card Footer Image-->
                     <a href="/ItemPage" class="btn btn-primary stretched-link mt-auto">View Details</a>
                 </div>
             </div>
@@ -73,11 +140,22 @@
     </div>
 </div>
 
-<!--Page selection-->
+
+<!--Pagination class-->
 <ul class="pagination justify-content-center">
+
+    <!--Previous page: disabled-->
     <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+
+    <!--Page 1: active-->
     <li class="page-item active"><a class="page-link" href="#">1</a></li>
+
+    <!--Page 2-->
     <li class="page-item "><a class="page-link" href="#">2</a></li>
+
+    <!--Page 3-->
     <li class="page-item"><a class="page-link" href="#">3</a></li>
+
+    <!--Next page-->
     <li class="page-item"><a class="page-link" href="#">Next</a></li>
 </ul>
