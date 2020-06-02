@@ -10,8 +10,13 @@ namespace RedhawksTradingPost.Pages
 {
     public class PrivacyModel : PageModel
     {
+        //logger
         private readonly ILogger<PrivacyModel> _logger;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="logger"></param>
         public PrivacyModel(ILogger<PrivacyModel> logger)
         {
             _logger = logger;
