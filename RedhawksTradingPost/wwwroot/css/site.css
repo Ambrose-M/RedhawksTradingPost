@@ -204,3 +204,42 @@ ul {
     padding: 2px 5px;
     margin-top: 1px;
 }
+
+/*Sets list style*/
+ul.a {
+    list-style-type: disc;
+}
+
+/*Making item images display side-by-side using the CSS float property*/
+* {
+    box-sizing: border-box;
+}
+
+/*Setting column attributes for ItemPage*/
+.column-i {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/*Setting row attributes*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Making links blue*/
+a {
+    color: blue;
+}
+
+/*Centering header text*/
+h2 {
+    text-align: center;
+}
+
+/*Centering paragraph text*/
+p-i {
+    text-align: center;
+}

@@ -4,73 +4,26 @@
     ViewData["Title"] = "ItemPage";
 }
 
-<!--Styles in CSS-->
-<html>
-<head>
-    <style>
-        /*Making item images display side-by-side using the CSS float property*/
-        *
-        {
-            box-sizing: border-box;
-        }
-
-        /*Setting column attributes*/
-        .column
-        {
-            float: left;
-            width: 33.33%;
-            padding: 5px;
-        }
-
-        /*Setting row attributes*/
-        .row::after
-        {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        /*Making links blue*/
-        a
-        {
-            color: blue;
-        }
-
-        /*Centering header text*/
-        h1
-        {
-            text-align: center;
-        }
-
-        /*Centering paragraph text*/
-        p
-        {
-            text-align: center;
-        }
-    </style>
-</head>
-
-
 <body>
     <!--Rows-->
     <div class="row">
 
         <!--Column 1-->
-        <div class="column">
+        <div class="column-i">
 
             <!--Item Picture 1-->
             <img src="~/img/modernChair.png" width="300" height="400">
         </div>
 
         <!--Column 2-->
-        <div class="column">
+        <div class="column-i">
 
             <!--Item Picture 2-->
             <img src="~/img/modernChairSide.png" width="300" height="400">
         </div>
 
         <!--Column 3-->
-        <div class="column">
+        <div class="column-i">
 
             <!--Item Picture 3-->
             <img src="~/img/modernChairBack.png" width="300" height="400">
@@ -84,7 +37,7 @@
 <div class="container">
 
     <!--Item title header-->
-    <h1>Modern Office Chair</h1>
+    <h2>Modern Office Chair</h2>
     <br>
 
     <!--Rows-->
