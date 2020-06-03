@@ -127,13 +127,22 @@
 <!--Make an Offer Form Button-->
 <button class="open-button" onclick="openForm()">Make an Offer</button>
 
+<!--Type of form: pop-up-->
 <div class="form-popup" id="myForm">
+
+    <!--Container that pop-ups after button is clicked-->
     <form action="/action_page.php" class="form-container">
 
+        <!--Container header-->
         <label for="email"><b>Emailing: hellera@seattleu.edu</b></label>
+
+        <!--Placeholder text for user's text input-->
         <input type="text" placeholder="Make your offer..." name="email" required>
 
+        <!--Button to submit text-->
         <button type="submit" class="btn">Submit</button>
+
+        <!--Button to cancel text submission-->
         <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
     </form>
 </div>
